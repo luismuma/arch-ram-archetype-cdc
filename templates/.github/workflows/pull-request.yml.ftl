@@ -23,7 +23,7 @@ jobs:
   pull-request:
     name: Build and Test
     if: startsWith(github.head_ref, 'feature/') || startsWith(github.head_ref, 'hotfix/')
-    uses: luismuma/arch-ram-reusable-workflows/.github/workflows/cdc.tests.pull-request.yml@main
+    uses: luismuma/arch-ram-reusable-workflows-main/.github/workflows/cdc.tests.pull-request.yml@main
     
     secrets:
       AZURE_ARTIFACTS_USER: ${r"${{ secrets.AZURE_ARTIFACTS_USER }}"}
